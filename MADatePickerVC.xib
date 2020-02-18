@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MADatePickerVC">
+            <connections>
+                <outlet property="myDatePicker" destination="TgV-fS-aSh" id="ApA-X2-Mko"/>
+                <outlet property="selectedDate" destination="hJZ-6A-Hlj" id="wiD-OX-BJb"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <datePicker contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="TgV-fS-aSh">
+                    <rect key="frame" x="0.0" y="164" width="600" height="162"/>
+                    <date key="date" timeIntervalSinceReferenceDate="437588205.83550698">
+                        <!--2014-11-13 16:16:45 +0000-->
+                    </date>
+                </datePicker>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selected Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hJZ-6A-Hlj">
+                    <rect key="frame" x="200" y="62" width="200" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="NHP-NC-OtX"/>
+                        <constraint firstAttribute="height" constant="21" id="bh5-nq-jmk"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerY" secondItem="TgV-fS-aSh" secondAttribute="centerY" constant="55" id="FSd-He-dJx"/>
+                <constraint firstAttribute="centerX" secondItem="TgV-fS-aSh" secondAttribute="centerX" id="fOm-k3-4HU"/>
+                <constraint firstItem="TgV-fS-aSh" firstAttribute="top" secondItem="hJZ-6A-Hlj" secondAttribute="bottom" constant="81" id="kNT-zO-hcy"/>
+                <constraint firstItem="TgV-fS-aSh" firstAttribute="centerX" secondItem="hJZ-6A-Hlj" secondAttribute="centerX" id="nPR-WP-FIO"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
